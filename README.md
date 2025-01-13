@@ -1,6 +1,6 @@
 # buster
 
-A tiny, single file, header only assertion library library for C++23
+A tiny, single file, header only assertion library for C++23
 
 ## Usage
 
