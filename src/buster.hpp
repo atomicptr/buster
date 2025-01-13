@@ -8,7 +8,9 @@
 namespace buster {
     namespace internal {
         inline void print_pass(std::string file, int line) {
+            #ifndef BUSTER_NO_PASS_PRINT
             std::cout << "\t\033[32mPASS\033[0m\t" << file << ":" << line << std::endl;
+            #endif
         }
 
         inline void print_fail(std::string file, int line, std::string reason) {
