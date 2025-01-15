@@ -1,3 +1,9 @@
+/**
+ * buster: A tiny, single file, header only assertion library for C++23
+ *
+ * Repository: https://github.com/atomicptr/buster
+ * License:    BSD 0-Clause
+ */
 #pragma once
 
 #include <cmath>
