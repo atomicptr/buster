@@ -42,7 +42,7 @@ namespace buster {
             }
 
             std::stringstream ss;
-            ss << "Expected " << actual << " to be " << actual;
+            ss << "Expected " << actual << " to be " << expected;
             print_fail(file, line, ss.str());
         }
 
@@ -51,10 +51,7 @@ namespace buster {
                 print_pass(file, line);
                 return;
             }
-
-            std::stringstream ss;
-            ss << "Expected value to be true";
-            print_fail(file, line, ss.str());
+            print_fail(file, line, "Expected value to be true");
         }
 
         inline void test_false(bool value, std::string file, int line) {
@@ -62,10 +59,7 @@ namespace buster {
                 print_pass(file, line);
                 return;
             }
-            
-            std::stringstream ss;
-            ss << "Expected value to be false";
-            print_fail(file, line, ss.str());
+            print_fail(file, line, "Expected value to be false");
         }
     }
 }
